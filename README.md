@@ -1,9 +1,9 @@
 
-##Observer-Pattern
+# Observer-Pattern
 
 Un proyecto de demostración que implementa el Patrón de Diseño Observer utilizando el robusto sistema de eventos de aplicación de Spring Boot. Este ejemplo ilustra cómo desacoplar componentes y manejar eventos de manera eficiente en una aplicación Spring.
 
-#🚀 Funcionalidades
+## 🚀 Funcionalidades
 
 Este proyecto demuestra los siguientes conceptos y funcionalidades:
 
@@ -19,14 +19,14 @@ Desacoplamiento de Componentes: Resalta cómo este patrón promueve una arquitec
 
 Procesamiento Síncrono/Asíncrono de Eventos: Demostración por defecto de la naturaleza síncrona de los eventos de Spring, con una nota sobre cómo habilitar el procesamiento asíncrono para mejorar el rendimiento en escenarios reales.
 
-#🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 Java 17+ 
 
 Spring Boot 
 
  Gradle
 
-#⚙️ Configuración y Ejecución Local
+## ⚙️ Configuración y Ejecución Local
 Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local:
 
 Prerrequisitos
@@ -66,7 +66,7 @@ Bash
 java -jar target/ObserverSpringBootApplication.jar
 (Ajusta el nombre del archivo .jar según la versión de tu proyecto).
 
-#🧪 Demostración del Flujo
+## 🧪 Demostración del Flujo
 Una vez que la aplicación se inicie, el CommandLineRunner en ObserverSpringBootApplication.java se ejecutará automáticamente, simulando el registro de un usuario.
 
 Observarás la siguiente salida en la consola (o similar):
@@ -82,8 +82,8 @@ Esta salida demuestra cómo:
 UserService registra al usuario y publica el UserRegisteredEvent.
 
 WelcomeEmailSender y UserActivityLogger (nuestros observadores) escuchan y reaccionan al evento de forma independiente, ejecutando su lógica específica (enviar un correo de bienvenida y registrar actividad, respectivamente).
-
-#📂 Estructura del Proyecto
+ 
+## 📂 Estructura del Proyecto
 
 observer-demo/
 ├── src/main/java/com/example/observerdemo/
@@ -109,7 +109,7 @@ observer-demo/
 └── .gitignore                        # Archivos y directorios ignorados por Git
 
 
-#💡 Consideraciones Adicionales
+## 💡 Consideraciones Adicionales
 
 Asincronicidad: Por defecto, los eventos de Spring son síncronos. Para procesar eventos de forma asíncrona (lo cual es útil para operaciones que no deben bloquear el hilo principal, como el envío de emails), puedes usar las anotaciones @EnableAsync en la clase principal y @Async en los métodos @EventListener.
 
