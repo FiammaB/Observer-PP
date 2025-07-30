@@ -1,8 +1,10 @@
 
 Observer-Pattern
+
 Un proyecto de demostración que implementa el Patrón de Diseño Observer utilizando el robusto sistema de eventos de aplicación de Spring Boot. Este ejemplo ilustra cómo desacoplar componentes y manejar eventos de manera eficiente en una aplicación Spring.
 
 🚀 Funcionalidades
+
 Este proyecto demuestra los siguientes conceptos y funcionalidades:
 
 Implementación del Patrón Observer: Muestra cómo un "sujeto" (el publicador de eventos) puede notificar a múltiples "observadores" (los listeners de eventos) sobre un cambio de estado sin tener conocimiento explícito de ellos.
